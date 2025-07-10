@@ -36,3 +36,11 @@ cd pandas-cheat-sheet
 ---
 
 ## 📦 Requirements
+
+- Make sure that you have python installed.
+- Run the following command:
+```bash
+    pip install -r requirements.txt
+``` 
+-> This should install all dependencies of this project
+- Open jupyter notebook or an IDE to view and test codes. If you don't have jupyter, use Google Colab
