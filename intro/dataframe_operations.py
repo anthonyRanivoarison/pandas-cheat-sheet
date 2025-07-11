@@ -43,4 +43,12 @@ df.reset_index(inplace=True)                # reset to default integers
 df.to_csv('my_data.csv', index=False)       # save
 df2 = pd.read_csv('my_data.csv')                       # load again
 
+# Combining datasets
+
+# Concat two DataFrames
+pd.concat([df, df2])
+
+# Join two DataFrames
+df.merge(df2, on='key')      # jointure interne
+df.merge(df2, on='key', how='left')  # jointure gauche
 
