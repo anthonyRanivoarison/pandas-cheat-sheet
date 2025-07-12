@@ -49,6 +49,7 @@ df2 = pd.read_csv('my_data.csv')                       # load again
 pd.concat([df, df2])
 
 # Join two DataFrames
-df.merge(df2, on='key')      # jointure interne
-df.merge(df2, on='key', how='left')  # jointure gauche
-
+df.merge(df2, on='key')                    # Inner join
+df.merge(df2, on='key', how='left')        # Left join
+df.merge(df2, on='key', how='right')       # Right join
+df.merge(df2, on='key', how='outer')       # Outer join
